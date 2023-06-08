@@ -3,8 +3,8 @@ import newsletter from '../../../assets/Banner/newsletter.png'
 const NewsLetter = () => {
     return (
         <div>
-      <div className="p-6 container md:w-2/3 xl:w-auto mx-auto flex flex-col xl:items-stretch justify-between xl:flex-row">
-        <div className="xl:w-96 md:mb-14 xl:mb-0 relative h-auto flex items-center justify-center">
+      <div className="p-6 container md:w-2/3 md:w-auto mx-auto flex flex-col md:items-stretch justify-evenly md:flex-row">
+        <div className="md:w-96 md:mb-14 md:mb-0 relative h-auto flex items-center justify-center">
           <img
             className="h-full xl:w-full lg:w-1/2 w-full"
             src={newsletter}
@@ -12,11 +12,11 @@ const NewsLetter = () => {
             role="img"
           />
         </div>
-        <div className="w-full xl:w-1/2 xl:pl-40 xl:py-28">
-          <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 text-gray-800 mb-4 text-center xl:text-left md:mt-0 mt-4">
+        <div className="w-full md:w-1/2 md:pl-40 md:py-28">
+          <h1 className="text-2xl md:text-4md md:text-5xl font-bold leading-10 text-gray-800 mb-4 text-center md:text-left md:mt-0 mt-4">
             Subscribe
           </h1>
-          <p className="text-base leading-normal text-gray-600 text-center xl:text-left">
+          <p className="text-base leading-normal text-gray-600 text-center md:text-left">
             Whether article spirits new her covered hastily sitting her. Money
             witty books nor son add.
           </p>
