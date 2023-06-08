@@ -1,0 +1,279 @@
+[
+    {
+      "_id": "642c155b2c4774f05c36eeaa",
+      "price": 10.99,
+      "name": "Learn Spanish for Beginners",
+      "instructorsName": "John Doe",
+      "image": "https://m.media-amazon.com/images/I/610X-bwbQTL._AC_UL400_.jpg",
+      "email": "john.doe@example.com",
+      "category": "popular",
+      "availableSeats": 20
+    },
+    {
+      "_id": "642c155b2c4774f05c36eeb9",
+      "price": 15.99,
+      "name": "Learn Russian for Beginners",
+      "instructorsName": "Jane Smith",
+      "image": "https://m.media-amazon.com/images/I/61amZYbio5L._AC_UL400_.jpg",
+      "email": "jane.smith@example.com",
+      "availableSeats": 15
+    },
+    {
+      "_id": "642c155b2c4774f05c36ee7c",
+      "price": 12.99,
+      "name": "Learn Spanish for Beginners",
+      "instructorsName": "Mike Johnson",
+      "image": "https://m.media-amazon.com/images/I/610X-bwbQTL._AC_UL400_.jpg",
+      "email": "mike.johnson@example.com",
+      "availableSeats": 25
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee88",
+      "price": 9.99,
+      "name": "Learn Farsi for Beginners",
+      "instructorsName": "Sarah Adams",
+      "image": "https://m.media-amazon.com/images/I/81ruayvWj+L._AC_UL400_.jpg",
+      "email": "sarah.adams@example.com",
+      "availableSeats": 18
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7a",
+      "price": 8.99,
+      "name": "Learn Spanish for Beginners",
+      "instructorsName": "David Wilson",
+      "image": "https://m.media-amazon.com/images/I/610X-bwbQTL._AC_UL400_.jpg",
+      "email": "david.wilson@example.com",
+      "availableSeats": 22
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8c",
+      "price": 14.99,
+      "name": "French Language Course for Beginners",
+      "instructorsName": "Emily Brown",
+      "image": "https://m.media-amazon.com/images/I/613rvZCEkWL._AC_UL400_.jpg",
+      "email": "emily.brown@example.com",
+      "availableSeats": 12
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee94",
+      "price": 11.99,
+      "name": "French Language Course for Beginners",
+      "instructorsName": "Michael Lee",
+      "image": "https://m.media-amazon.com/images/I/613rvZCEkWL._AC_UL400_.jpg",
+      "email": "michael.lee@example.com",
+      "availableSeats": 30
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9e",
+      "price": 13.99,
+      "name": "Learn Russian for Beginners",
+      "instructorsName": "Sophia Martinez",
+      "image": "https://m.media-amazon.com/images/I/61amZYbio5L._AC_UL400_.jpg",
+      "email": "sophia.martinez@example.com",
+      "availableSeats": 16
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea6",
+      "price": 16.99,
+      "name": "French Language Course for Beginners",
+      "instructorsName": "Daniel Johnson",
+      "image": "https://m.media-amazon.com/images/I/71er6cVVLtL._AC_UL400_.jpg",
+      "email": "daniel.johnson@example.com",
+      "category": "popular",
+      "availableSeats": 20
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeaf",
+      "price": 10.99,
+      "name": "Farsi Language Course for Beginners",
+      "instructorsName": "Olivia Davis",
+      "image": "https://m.media-amazon.com/images/I/81ruayvWj+L._AC_UL400_.jpg",
+      "email": "olivia.davis@example.com",
+      "availableSeats": 15
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee89",
+      "price": 12.99,
+      "name": "Italian for Beginners",
+      "instructorsName": "William Thompson",
+      "image": "https://m.media-amazon.com/images/I/61Jcm6YwNML._AC_UL400_.jpg",
+      "email": "william.thompson@example.com",
+      "availableSeats": 25
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8a",
+      "price": 9.99,
+      "name": "Bengali for Beginners",
+      "instructorsName": "Lily Johnson",
+      "image": "https://m.media-amazon.com/images/I/61V1a8TXnQL._AC_UL400_.jpg",
+      "email": "lily.johnson@example.com",
+      "availableSeats": 18
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee96",
+      "price": 11.99,
+      "name": "Italian for Beginners",
+      "instructorsName": "Ryan Brown",
+      "image": "https://m.media-amazon.com/images/I/61Jcm6YwNML._AC_UL400_.jpg",
+      "email": "ryan.brown@example.com",
+      "availableSeats": 22
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee81",
+      "price": 8.99,
+      "name": "Chinese for Beginners",
+      "instructorsName": "Emma Wilson",
+      "image": "https://m.media-amazon.com/images/I/61xbQ5PgscL._AC_UL400_.jpg",
+      "email": "emma.wilson@example.com",
+      "availableSeats": 12
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee84",
+      "price": 13.99,
+      "name": "Italian for Beginners",
+      "instructorsName": "Jacob Lee",
+      "image": "https://m.media-amazon.com/images/I/61Jcm6YwNML._AC_UL400_.jpg",
+      "email": "jacob.lee@example.com",
+      "availableSeats": 30
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea4",
+      "price": 16.99,
+      "name": "German Language Course for Beginners",
+      "instructorsName": "Chloe Adams",
+      "image": "https://m.media-amazon.com/images/I/71J-uY87ufL._AC_UL400_.jpg",
+      "email": "chloe.adams@example.com",
+      "category": "popular",
+      "availableSeats": 16
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea5",
+      "price": 14.99,
+      "name": "German Language Course for Beginners",
+      "instructorsName": "Matthew Martinez",
+      "image": "https://m.media-amazon.com/images/I/71J-uY87ufL._AC_UL400_.jpg",
+      "email": "matthew.martinez@example.com",
+      "availableSeats": 20
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee87",
+      "price": 10.99,
+      "name": "Bengali Language Course for Beginners",
+      "instructorsName": "Ava Wilson",
+      "image": "https://m.media-amazon.com/images/I/61V1a8TXnQL._AC_UL400_.jpg",
+      "email": "ava.wilson@example.com",
+      "availableSeats": 15
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee83",
+      "price": 12.99,
+      "name": "German Language Course for Beginners",
+      "instructorsName": "Henry Thompson",
+      "image": "https://m.media-amazon.com/images/I/71J-uY87ufL._AC_UL400_.jpg",
+      "email": "henry.thompson@example.com",
+      "availableSeats": 25
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7f",
+      "price": 9.99,
+      "name": "Chinese Language Course for Beginners",
+      "instructorsName": "Grace Davis",
+      "image": "https://m.media-amazon.com/images/I/61xbQ5PgscL._AC_UL400_.jpg",
+      "email": "grace.davis@example.com",
+      "availableSeats": 18
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea8",
+      "price": 11.99,
+      "name": "English Language Course for Beginners",
+      "instructorsName": "Sebastian Johnson",
+      "image": "https://m.media-amazon.com/images/I/61flF0ckngL._AC_UL400_.jpg",
+      "email": "sebastian.johnson@example.com",
+      "availableSeats": 22
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeba",
+      "price": 8.99,
+      "name": "Arabic Language Course for Beginners",
+      "instructorsName": "Sophie Brown",
+      "image": "https://m.media-amazon.com/images/I/61Cs0bFURIL._AC_UL400_.jpg",
+      "email": "sophie.brown@example.com",
+      "category": "popular",
+      "availableSeats": 12
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee80",
+      "price": 13.99,
+      "name": "English Language Course for Beginners",
+      "instructorsName": "Noah Wilson",
+      "image": "https://m.media-amazon.com/images/I/61flF0ckngL._AC_UL400_.jpg",
+      "email": "noah.wilson@example.com",
+      "availableSeats": 30
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee90",
+      "price": 16.99,
+      "name": "English Language Course for Beginners",
+      "instructorsName": "Avery Adams",
+      "image": "https://m.media-amazon.com/images/I/61flF0ckngL._AC_UL400_.jpg",
+      "email": "avery.adams@example.com",
+      "category": "popular",
+      "availableSeats": 16
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb0",
+      "price": 14.99,
+      "name": "Hindi Language Course for Beginners",
+      "instructorsName": "Mia Martinez",
+      "image": "https://m.media-amazon.com/images/I/61bJAgqq45L._AC_UL400_.jpg",
+      "email": "mia.martinez@example.com",
+      "availableSeats": 20
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8d",
+      "price": 10.99,
+      "name": "Korean Language Course for Beginners",
+      "instructorsName": "Lucas Thompson",
+      "image": "https://m.media-amazon.com/images/I/61QyIEoKjSL._AC_UL400_.jpg",
+      "email": "lucas.thompson@example.com",
+      "availableSeats": 15
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8e",
+      "price": 12.99,
+      "name": "Korean Language Course for Beginners",
+      "instructorsName": "Eva Davis",
+      "image": "https://m.media-amazon.com/images/I/61QyIEoKjSL._AC_UL400_.jpg",
+      "email": "eva.davis@example.com",
+      "availableSeats": 25
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea7",
+      "price": 9.99,
+      "name": "Korean Language Course for Beginners",
+      "instructorsName": "Liam Wilson",
+      "image": "https://m.media-amazon.com/images/I/61QyIEoKjSL._AC_UL400_.jpg",
+      "email": "liam.wilson@example.com",
+      "category": "popular",
+      "availableSeats": 18
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee99",
+      "price": 11.99,
+      "name": "Arabic Language Course for Beginners",
+      "instructorsName": "Sophia Johnson",
+      "image": "https://m.media-amazon.com/images/I/61Cs0bFURIL._AC_UL400_.jpg",
+      "email": "sophia.johnson@example.com",
+      "availableSeats": 22
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb3",
+      "price": 8.99,
+      "name": "Hindi Language Course for Beginners",
+      "instructorsName": "Owen Brown",
+      "image": "https://m.media-amazon.com/images/I/61bJAgqq45L._AC_UL400_.jpg",
+      "email": "owen.brown@example.com",
+      "availableSeats": 12
+    }
+  ]
+  

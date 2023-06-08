@@ -6,11 +6,11 @@ const Footer = () => {
         <div className="footer p-10 bg-neutral text-neutral-content">
 
 <div>
-<span className="footer-title">Services</span> 
-<a className="link link-hover">Branding</a>
-<a className="link link-hover">Design</a>
-<a className="link link-hover">Marketing</a>
-<a className="link link-hover">Advertisement</a>
+<h3 className='text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Brain Hub</h3>
+<p>New York, NY 10012, US</p>
+<p>info@example.com</p>
+<p>+ 01 234 567 88</p>
+<p>+ 01 234 567 89</p>
 </div> 
 <div>
 <span className="footer-title">Company</span> 

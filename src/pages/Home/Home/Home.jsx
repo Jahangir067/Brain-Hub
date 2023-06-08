@@ -1,9 +1,16 @@
+import PopularInstructor from "../../Shared/PopularInstructor/PopularInstructor";
+import Banner from "../Banner/Banner";
+import NewsLetter from "../NewsLetter/NewsLetter";
+import PopularClassess from "../PopularClassess/PopularClassess";
 
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home</h2>
+           <Banner></Banner>
+           <PopularClassess></PopularClassess>
+           <PopularInstructor></PopularInstructor>
+           <NewsLetter></NewsLetter>
         </div>
     );
 };
