@@ -1,29 +1,33 @@
 import { Link } from "react-router-dom";
-import img from '../../../assets/Banner/logo.png'
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
-    const {user, logOut} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
+    console.log(user)
     const handleLogOut = () => {
-           logOut()
-           .then( () => {})
-           .catch(error => console.log(error))
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error))
     }
     const navOptions = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/classes'>Classes</Link></li>
         <li><Link to='/instructor'>Instructor</Link></li>
-        
-        <div>
-            {
-                user? <>
-                    <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
-                </> : <>
-                    <li><Link to='/login'>Login</Link></li>
-                </>
-            }
-        </div>
+        <li><Link to='/secret'>Secret</Link></li>
+
+        {
+            user ? <>
+                <li>
+                    <button onClick={handleLogOut} className="btn btn-ghost">Log Out</button>
+                </li>
+                  <img src={user?.photoURL} alt="" className="rounded-full w-8 h-8" />
+
+            </> : <>
+                <li><Link to='/login'>Login</Link></li>
+            </>
+        }
+
     </>
     return (
         <>
@@ -40,12 +44,9 @@ const NavBar = () => {
                     <Link to='/'><h3 className='text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Brain Hub</h3></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 flex justify-between">
                         {navOptions}
                     </ul>
-                </div>
-                <div className="w-10 rounded-full navbar-end">
-                    <img src={img} alt="" />
                 </div>
             </div>
 

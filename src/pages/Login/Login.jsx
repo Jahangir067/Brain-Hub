@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 
@@ -9,6 +9,10 @@ import Swal from "sweetalert2";
 const Login = () => {
 
   const {signIn} = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || '/';
 
     const handleLogin = event => {
         event.preventDefault();
@@ -26,8 +30,10 @@ const Login = () => {
             title: 'You Have Successfully Login',
             showConfirmButton: false,
             timer: 1500
-          })
+          });
+          navigate(from, {replace: true});
         })
+
     }
     return (
        <>
