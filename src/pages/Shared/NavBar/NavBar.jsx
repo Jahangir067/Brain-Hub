@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+import { FaShoppingCart } from 'react-icons/fa';
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
@@ -15,13 +16,21 @@ const NavBar = () => {
         <li><Link to='/classes'>Classes</Link></li>
         <li><Link to='/instructor'>Instructor</Link></li>
         <li><Link to='/secret'>Secret</Link></li>
+        <li>
+            <Link to="/"> 
+                <button className="btn">
+                    <FaShoppingCart></FaShoppingCart>
+                    <div className="badge badge-secondary">+0</div>
+                </button>
+            </Link>
+        </li>
 
         {
             user ? <>
                 <li>
                     <button onClick={handleLogOut} className="btn btn-ghost">Log Out</button>
                 </li>
-                  <img src={user?.photoURL} alt="" className="rounded-full w-8 h-8" />
+                <img src={user?.photoURL} alt="" className="rounded-full w-8 h-8" />
 
             </> : <>
                 <li><Link to='/login'>Login</Link></li>
@@ -43,10 +52,13 @@ const NavBar = () => {
                     </div>
                     <Link to='/'><h3 className='text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Brain Hub</h3></Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 flex justify-between">
+                <div className="navbar-center hidden lg:flex justify-between">
+                    <ul className="menu menu-horizontal px-1">
                         {navOptions}
                     </ul>
+                </div>
+                <div className="navbar-end">
+                    <a className="btn btn-error">Get started</a>
                 </div>
             </div>
 
