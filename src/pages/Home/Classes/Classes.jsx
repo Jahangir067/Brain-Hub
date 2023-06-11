@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import useClasses from '../../../hooks/useClasses';
-import { useContext } from 'react';
+import { useContext, useState  } from 'react';
 import { AuthContext } from '../../../providers/AuthProvider';
 import Swal from 'sweetalert2';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -15,8 +15,11 @@ const Classes = () => {
     const [, refetch] = useCart();
     const navigate = useNavigate();
     const location = useLocation();
+    const [selectedClassId, setSelectedClassId] = useState(null);
 
-    const handleSelect = singleClass => {
+
+    const handleSelect = (singleClass, event) => {
+         console.log(event);
          console.log(singleClass);
          if(user && user.email){
           const selectClass = {singleClassId: _id,name: singleClass.name, image: singleClass.image, instructorsName: singleClass.instructorsName, price: singleClass.price, availableSeats: singleClass.availableSeats, email: user.email}
@@ -31,6 +34,7 @@ const Classes = () => {
           .then(data => {
             if(data.insertedId){
               refetch();
+              setSelectedClassId(singleClass._id);
               Swal.fire({
                 position: 'top-end',
                 icon: 'success',
@@ -76,7 +80,7 @@ const Classes = () => {
               <p>{singleClass.instructorsName}</p>
               <p>Available Seats: {singleClass.availableSeats} <div className="badge badge-primary">Remaining</div></p>
               <p>Price: ${singleClass.price}</p>
-              <button onClick={() => handleSelect(singleClass)} className="btn btn-sm btn-primary ">Select</button>
+              <button disabled={ selectedClassId === singleClass._id} onClick={() => handleSelect(singleClass)} className="btn btn-sm btn-primary ">Select</button>
             </div>
           </div>)
         }
