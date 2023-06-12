@@ -13,6 +13,8 @@ const Dashboard = () => {
     // const isAdmin = true;
     const [isAdmin] = useAdmin();
     const isInstructor = true;
+    const isUser = false;
+    console.log(isAdmin)
     return (
         <div className="drawer lg:drawer-open">
 
@@ -52,8 +54,7 @@ const Dashboard = () => {
                             <li><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
                             <li><NavLink to='/classes'><FaDiscord></FaDiscord>Classes</NavLink></li>
                             <li><NavLink to='/instructor'><FaPager></FaPager>Instructor</NavLink></li>
-                       </> :
-                         <>
+                       </> :   <>
                          <li><NavLink to='/dashboard/home'><FaWallet></FaWallet>Home</NavLink></li>
                             <li>
                                 <NavLink to='/dashboard/mycart'><FaShoppingCart></FaShoppingCart>My Selected Classes <div className="badge badge-secondary">+{cart?.length || 0}</div></NavLink>

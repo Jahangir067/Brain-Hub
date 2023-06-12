@@ -17,13 +17,9 @@ const NavBar = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/classes'>Classes</Link></li>
         <li><Link to='/instructor'>Instructor</Link></li>
-        <li><Link to='/secret'>Secret</Link></li>
         <li>
             <Link to="/dashboard/mycart"> 
-                <button className="btn gap-2">
-                    <FaShoppingCart></FaShoppingCart>
-                    <div className="badge badge-secondary">+{cart?.length || 0}</div>
-                </button>
+                 Dashboard
             </Link>
         </li>
 
@@ -60,7 +56,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn btn-error">Get started</a>
+                    
                 </div>
             </div>
 
