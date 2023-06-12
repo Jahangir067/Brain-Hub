@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 
 const SignUp = () => {
@@ -19,18 +20,31 @@ const SignUp = () => {
             console.log(loggedUser);
             updateUserProfile(data.name, data.photoURL)
             .then( () => {
-                  console.log('user profile info updated')
-                  reset();
-                  Swal.fire({
-                    title: 'Success',
-                    showClass: {
-                      popup: 'animate__animated animate__fadeInDown'
+                const saveUser = {name: data.name, email: data.email}
+                   fetch('http://localhost:5000/users', {
+                    method: 'POST',
+                    headers: {
+                      'content-type': 'application/json'
                     },
-                    hideClass: {
-                      popup: 'animate__animated animate__fadeOutUp'
+                    body: JSON.stringify(saveUser)
+                   })
+                   .then(res => res.json())
+                   .then(data => {
+                    if(data.insertedId){
+                      reset();
+                      Swal.fire({
+                        title: 'Success',
+                        showClass: {
+                          popup: 'animate__animated animate__fadeInDown'
+                        },
+                        hideClass: {
+                          popup: 'animate__animated animate__fadeOutUp'
+                        }
+                      })
+                      navigate('/');
                     }
-                  })
-                  navigate('/');
+                   })
+                 
             })
             .catch(error => console.log(error))    
         })
@@ -104,6 +118,7 @@ const SignUp = () => {
         </div>
       </form>
       <p className="text-center text-xl"><small>Already have an Account? <Link to='/login' className="text-blue-500">Login Here</Link></small></p>
+      <SocialLogin></SocialLogin>
     </div>
 </div>
         </>
