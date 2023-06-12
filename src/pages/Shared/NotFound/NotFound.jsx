@@ -2,7 +2,7 @@ import notfound from "../../../assets/Banner/404.jpg";
 
 const NotFound = () => {
     const navigate = useNavigate();
-    // Navigate to home
+    // Navigate to the home
     const navigateToHome = () => {
         navigate("/");
     };
