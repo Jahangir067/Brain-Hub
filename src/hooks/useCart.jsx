@@ -11,7 +11,7 @@ const useCart = () => {
     queryKey: ['carts', user?.email],
     enabled: !loading,
     // queryFn: async () => {
-    //     const response = await fetch(`http://localhost:5000/carts?email=${user?.email}`, {headers: {
+    //     const response = await fetch(`https://brain-hub-server.vercel.app/carts?email=${user?.email}`, {headers: {
     //       authorization: `bearer ${token}`
     //     }})
     //     return response.json();

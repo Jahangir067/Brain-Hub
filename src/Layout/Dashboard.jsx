@@ -10,7 +10,6 @@ const Dashboard = () => {
     const [cart] = useCart();
 
     // TODO - load data from the server dynamic isAdmin based data
-    // const isAdmin = true;
     const [isAdmin] = useAdmin();
     const isInstructor = true;
     const isUser = false;
@@ -37,7 +36,7 @@ const Dashboard = () => {
                         isAdmin ? <>
                             
 
-                            <li><NavLink to='/dashboard/home'><FaDiscord></FaDiscord>Home</NavLink></li>
+                            
                             <li><NavLink to='/dashboard/manageclasses'><FaDiscord></FaDiscord>Manage Classes</NavLink></li>
                             <li><NavLink to='/dashboard/manageusers'><FaWallet></FaWallet>Manage Users</NavLink></li>
                             <div className="divider"></div>
@@ -47,7 +46,7 @@ const Dashboard = () => {
                         </> :
                        isInstructor?   <>
 
-                          <li><NavLink to='/dashboard/home'><FaDiscord></FaDiscord>Home</NavLink></li>
+                          
                           <li><NavLink to='/dashboard/addclass'><FaDiscord></FaDiscord>Add a Class</NavLink></li>
                             <li><NavLink to='/dashboard/myclass'><FaWallet></FaWallet>My Classes</NavLink></li>
                             <div className="divider"></div>
@@ -55,7 +54,7 @@ const Dashboard = () => {
                             <li><NavLink to='/classes'><FaDiscord></FaDiscord>Classes</NavLink></li>
                             <li><NavLink to='/instructor'><FaPager></FaPager>Instructor</NavLink></li>
                        </> :   <>
-                         <li><NavLink to='/dashboard/home'><FaWallet></FaWallet>Home</NavLink></li>
+                         
                             <li>
                                 <NavLink to='/dashboard/mycart'><FaShoppingCart></FaShoppingCart>My Selected Classes <div className="badge badge-secondary">+{cart?.length || 0}</div></NavLink>
 
