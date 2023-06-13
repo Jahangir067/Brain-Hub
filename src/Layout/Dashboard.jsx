@@ -68,7 +68,6 @@ const Dashboard = () => {
                         </>
                     }
 
-                    {/* Sidebar content here */}
 
                 </ul>
 
