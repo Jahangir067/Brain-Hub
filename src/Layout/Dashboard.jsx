@@ -9,7 +9,7 @@ import useAdmin from "../hooks/useAdmin";
 const Dashboard = () => {
     const [cart] = useCart();
 
-    // TODO - load data from the server dynamic isAdmin based data
+
     const [isAdmin] = useAdmin();
     const isInstructor = true;
     const isUser = false;
