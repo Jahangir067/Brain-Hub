@@ -10,12 +10,7 @@ const useCart = () => {
   const { refetch, data: cart = [] } = useQuery({
     queryKey: ['carts', user?.email],
     enabled: !loading,
-    // queryFn: async () => {
-    //     const response = await fetch(`https://brain-hub-server.vercel.app/carts?email=${user?.email}`, {headers: {
-    //       authorization: `bearer ${token}`
-    //     }})
-    //     return response.json();
-    // },
+
     queryFn: async () => {
         const response = await axiosSecure(`/carts?email=${user?.email}`)
         console.log('res from axios', response)
