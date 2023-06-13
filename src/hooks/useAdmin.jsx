@@ -14,6 +14,7 @@ const useAdmin = () => {
             return res.data.admin;
         }
     })
+    // return admin info
     return [isAdmin, isAdminLoading]
 };
 
