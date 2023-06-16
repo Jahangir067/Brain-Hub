@@ -4,7 +4,7 @@ const useInstructors = () => {
     const [instructors, setInstructors] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect( () => {
-        fetch('https://brain-hub-server.vercel.app/instructor')
+        fetch('http://localhost:5000/instructor')
         .then(res => res.json())
         .then(data => {
               setInstructors(data);

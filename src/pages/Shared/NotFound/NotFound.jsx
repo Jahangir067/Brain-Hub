@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import notfound from "../../../assets/Banner/404.jpg";
 
 const NotFound = () => {

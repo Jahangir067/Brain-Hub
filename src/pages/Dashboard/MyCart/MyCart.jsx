@@ -18,7 +18,7 @@ const MyCart = () => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-              fetch(`https://brain-hub-server.vercel.app/carts/${singleClass._id}`, {
+              fetch(`http://localhost:5000/carts/${singleClass._id}`, {
                 method: 'DELETE'
               })
               .then(res => res.json())

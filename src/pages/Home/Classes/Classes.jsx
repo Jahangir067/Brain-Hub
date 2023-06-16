@@ -23,7 +23,7 @@ const Classes = () => {
          console.log(singleClass);
          if(user && user.email){
           const selectClass = {singleClassId: _id,name: singleClass.name, image: singleClass.image, instructorsName: singleClass.instructorsName, price: singleClass.price, availableSeats: singleClass.availableSeats, email: user.email}
-          fetch('https://brain-hub-server.vercel.app/carts', {
+          fetch('http://localhost:5000/carts', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'

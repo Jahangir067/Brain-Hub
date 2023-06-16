@@ -43,7 +43,7 @@ const AuthProvider = ({children}) => {
             console.log('current user', currentUser);
             // set & get token
             if(currentUser){
-                axios.post('https://brain-hub-server.vercel.app/jwt', {email: currentUser.email})
+                axios.post('http://localhost:5000/jwt', {email: currentUser.email})
                 .then(data => {
                     // console.log('data is here', data.data.token);
                     localStorage.setItem('access-token', data.data.token)

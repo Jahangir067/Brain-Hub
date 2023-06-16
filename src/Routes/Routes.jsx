@@ -16,12 +16,15 @@ import ManageClasses from "../pages/Dashboard/ManageClasses/ManageClasses";
 import ManageUsers from "../pages/Dashboard/ManageUsers/ManageUsers";
 import AddClass from "../pages/Dashboard/addClass/addClass";
 import MyClasses from "../pages/Dashboard/MyClasses/MyClasses";
+import AdminFeedback from "../pages/Dashboard/AdminFeedback/AdminFeedback";
+import NotFound from "../pages/Shared/NotFound/NotFound";
 
 
 export const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <NotFound />,
       children: [
         {
             path: '/',
@@ -54,6 +57,7 @@ export const router = createBrowserRouter([
     {
       path: 'dashboard',
       element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+      errorElement: <NotFound />,
       children: [
         {
           path: 'mycart',
@@ -74,6 +78,10 @@ export const router = createBrowserRouter([
         {
           path: 'myclass',
           element: <MyClasses></MyClasses>
+        },
+        {
+          path: 'feedback',
+          element: <AdminFeedback></AdminFeedback>
         }
       ]
     }
