@@ -4,7 +4,7 @@ const useClasses = () => {
     const [classess, setClassess] = useState([]);
     const [loading, setLoading] = useState(true)
     useEffect( () => {
-        fetch('http://localhost:5000/classes')
+        fetch('https://brain-hub-server.vercel.app/classes')
         .then(res => res.json())
         .then(data => {
             setClassess(data);

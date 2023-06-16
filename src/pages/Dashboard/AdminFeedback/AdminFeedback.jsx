@@ -9,7 +9,7 @@ const AdminFeedback = () => {
         event.preventDefault()
         const feedback = event.target.feedback.value;
         console.log(id, feedback)
-        fetch(`http://localhost:5000/class-feedback/${id}`, {feedback}, {
+        fetch(`https://brain-hub-server.vercel.app/class-feedback/${id}`, {feedback}, {
             method: 'PATCH',
         })
         .then(res => res.json())

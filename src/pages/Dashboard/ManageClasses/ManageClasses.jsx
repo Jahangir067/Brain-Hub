@@ -13,7 +13,7 @@ const ManageClasses = () => {
     })
 
     const handleApproved = (id) => {
-        fetch(`http://localhost:5000/classes/admin/${id._id}`, {
+        fetch(`https://brain-hub-server.vercel.app/classes/admin/${id._id}`, {
             method: 'PATCH',
         })
         .then(res => res.json())
@@ -31,7 +31,7 @@ const ManageClasses = () => {
             })
     }
     const handleDeny = (id) => {
-        fetch(`http://localhost:5000/classes/admin/${id._id}`, {
+        fetch(`https://brain-hub-server.vercel.app/classes/admin/${id._id}`, {
             method: 'PATCH',
         })
         .then(res => res.json())
